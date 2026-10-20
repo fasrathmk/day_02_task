@@ -4,38 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PraRoz</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css'>    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="">PraRoz</a>
 
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">SERVICE</a></li>
-                <li><a href="">DESIGN</a></li>
-                <li><a href="">CONTACT</a></li>
+<!-- Background Image Upload using URL -->
+<body class="bg-[url('./assets/hero_image.jpg')] bg-cover text-white">
+
+    <!-- Header Section for using Navigation bar -->
+    <header class="px-5 py-4">
+        <nav class="flex items-center justify-between text-white">
+
+            <!-- Logo Section -->
+            <a href="" class="text-orange-500 font-bold text-2xl">PraRoz</a>
+
+            <!-- HOME   ABOUT   SERVICE    DESIGN   CONTACT -->
+            <ul class="flex gap-8">
+                <li class="hover:text-orange-500"><a href="" >HOME</a></li>
+                <li class="hover:text-orange-500"><a href="">ABOUT</a></li>
+                <li class="hover:text-orange-500"><a href="">SERVICE</a></li>
+                <li class="hover:text-orange-500"><a href="">DESIGN</a></li>
+                <li class="hover:text-orange-500"><a href="">CONTACT</a></li>
             </ul>
 
-            <input placeholder="Type to Search">
-            <button>Search</button>
+            <!-- Search Input & Button section -->
+            <div class="flex">
 
+                <input type="search" placeholder="Type to Search" 
+                class="w-44 border border-orange-500 rounded-l-lg px-2 py-1">
+
+                <button type="button" 
+                class="cursor-pointer text-white rounded-r-lg bg-orange-500 px-2 py-1 hover:bg-white hover:text-orange-500">Search</button>
+            </div>
+            
         </nav>
     </header>
 
-    <h1>Web Design &<br><span>Development</span><br>course</h1>
-    <h3>Web Design is a Specialisation of the design stream. They also use HTML.<br>CSS,WYSIWYG editing software, mark up validators etc..<br>to create design elements.</h3>
+    <hero class="flex justify-between items-center p-5 mt-10" >
+        
+        <div class="">
+        <h1 class="text-4xl font-bold mb-5">Web Design &<br><span class="text-orange-500">Development</span><br>Course</h1>
+        <p>
+            Web Design is a Specialisation of the design stream. They also use HTML,<br>
+            CSS, WYSIWYG editing software. mark up validators etc..<br>
+            to create design elements
+        </p>
+        <button type="button" 
+        class="bg-orange-500 mt-5 px-10 py-2 rounded-xl"
+        >JOIN US</button>
 
-    <button>JOIN US</button>
 
-    <form>
-        <button>Login Here</button><br>
-        <input placeholder="Enter Email Here"><br>
-        <input placeholder="Enter Password Here"><br>
-        <button>Login</button>
-        <h5>Don't have an account?<br><a href="">Sign up</a> here</h5>
-        <h5>Login in with</h5>
-    </form>
+        </div>
+
+        <div class="bg-black rounded-lg p-4 m-4 ">
+            <h3 class="w-60 bg-white text-orange-500 font-bold rounded-lg text-center py-2">Login Here</h3><br>
+            <input type="email" placeholder="Enter your Email" class="w-60 border-b border-orange-500 mb-4"><br>
+            <input type="Password" placeholder="Enter Your Password Here" class="w-60 border-b border-orange-500 mb-4"><br>
+            <button type="button" class="w-60 bg-orange-500 font-bold px-10 py-2 rounded-lg mb-4">Login</button><br>
+            <h3 class="text-center">Don't have an account?<br><a href="" class="text-orange-500">Sign up</a> here</h3>
+            <h5 class="text-center text-sm mt-4">Log in with</h5>
+        
+        <div>
+            <a href=""><i class="fi fi-brands-facebook"></i></a>
+            <a href=""><i class="fi fi-brands-instagram-circle"></i></a>
+            <a href=""><i class="fi fi-brands-twitter-alt-circle"></i></a>
+            <a href=""><i class="fi fi-brands-google-circle"></i></a>
+            <a href=""><i class="fi fi-brands-skype-circle"></i></a>
+        </div>
+
+        </div>
+
+    </hero>
+
+
+
+
+    
 </body>
 </html>
